@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0.2rem 5rem;
+  background-color: #333;
+  color: white;
+}
+
+/* Header Styles */
+header .logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links .nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.highlight {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+.highlight:hover {
+  background-color: #eef1fe;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4e4e4e; /* Gray background */
+  padding: 40px;
+  height: 80vh;
+  width: 98.2vw;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  overflow: hidden;
+  margin: 0.5rem;
+}
+
+/* Left Content Section */
+.content {
+  flex: 1;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #87ceeb; /* Light blue */
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 14px;
+  color: #e0e0e0; /* Light gray */
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #ff0000; /* Red */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #cc0000; /* Darker red */
+}
+
+/* Right Placeholder Section */
+.image-placeholder {
+  flex: 1;
+  height: 300px;
+  margin-left: 20px;
+}
+
+.image-placeholder img {
+  width: 100%;
+  max-width: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.errorpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.errorpic {
+  height: 300px;
+}
+
+.btn {
+  background-color: #029c21;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Card Styles */
+
+.allCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #cbe1f7;
+}
+
+.card {
+  width: 300px;
+  height: max-content;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1rem;
+  background-color: #373636;
+  color: white;
+}
+
+.movieCard {
+  width: 350px;
+  height: max-content;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 2rem;
+  background-color: #373636;
+  color: white;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Upper Section (Poster) */
+.card-upper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Lower Section (Details) */
+.card-lower {
+  padding: 1rem;
+  text-align: center;
+}
+
+.movie-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.movie-year {
+  font-size: 1rem;
+  color: #d2d2d2;
+  margin-bottom: 0.5rem;
+  font-weight: bolder;
+}
+
+.movie-genre {
+  font-size: 1rem;
+  color: #68d706;
+}
+
+.parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.movieDetailsContainer {
+  display: flex;
+  gap: 2rem;
+  background-color: #e8f8f8; /* Light blue background */
+  border-radius: 15px;
+  padding: 20px;
+  width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.movieDetailsContainer::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  background: linear-gradient(to bottom, #141e30, #f000ff);
+  border-radius: 0 15px 15px 0;
+}
+
+.movieCard{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.poster {
+  width: 3060%;
+  height: max-content;
+  border-radius: 10px;
+}
+
+
+.movieDetails {
+  margin-top: 2rem;
+  width: 40%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.movieDetails h3 {
+  color: #011a45;
+  font-size: 1.5rem;
+}
+
+.movieDetails p {
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.movieDetails ul {
+  list-style-type: disc;
+  padding-left: 18px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.metadata {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 10px 20px;
+  width: max-content;
+  height: 40px;
+  text-align: center;
+}
+
+.badge p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.badge span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.badge.rating {
+  background: linear-gradient(to bottom, #a9f195, #4caf50); 
+  color:white ;
+}
+
+/* Release Date Badge */
+.badge.release {
+  background: linear-gradient(to bottom, #f3b3f5, #f000ff); /* Black to pink */
+}
+
+/* Contact Form Styles */
+
+.contactBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 84vh;
+}
+
+.contact-form-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem;
+}
+
+.contact-form-container h1 {
+  text-align: center;
+  margin: 1.5rem;
+  color: #505050;
+}
+
+/* Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #007bff;
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* Thin scrollbar width */
+}
+
+body::-webkit-scrollbar-track {
+  background: grey; /* Grey background for the track */
+  border-radius: 10px; /* Rounded track for a unique look */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, black, lightblue); /* Black to light blue gradient */
+  border-radius: 10px; /* Rounded thumb for smooth scrolling effect */
+  border: 2px solid grey; /* Adds a border to integrate with the track */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, lightblue, black); /* Gradient reverses on hover */
+  border-color: lightblue; /* Border changes to light blue for emphasis */
+}
+
